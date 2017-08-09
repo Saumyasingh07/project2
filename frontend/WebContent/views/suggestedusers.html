@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Insert title here</title>
+
+</head>
+<style>
+body {
+	background-image: url("images/FT LOGOmodified-2 (1).jpg");
+	background-size: cover;
+}
+</style>
+<body>
+<div>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Firstname</th><th>Lastname</th><th>Role</th><th>Online</th><th>Friend Request</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="user in suggestedUsers">
+<td>{{user.firstname}}</td><td>{{user.lastname}}</td><td>{{user.role}}</td>
+<td ng-if="user.online">YES</td>
+<td ng-if="!user.online">NO</td>
+
+<td><a href="" ng-click="friendrequest(user.username)" class="btn btn-primary">Send Friend Request</a></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+</body>
+</html>

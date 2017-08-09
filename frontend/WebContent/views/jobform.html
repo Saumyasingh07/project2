@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+	rel="stylesheet" />
+<title>Insert title here</title>
+</head>
+<style>
+.signupbtn {
+   color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    float: center;
+    width: 20%;
+}
+</style>
+<body>
+<div class="form-group" style="color:yellow">
+    <h1 align="center"><b><i><u>Job Form</u></i></b></h1>
+</div>
+<span>{{message}}</span>
+<form><div align="center">
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Job Title</h3></label> <input type="text" ng-model="job.jobTitle"></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Job Description </h3></label><textarea ng-model="job.jobDescription"></textarea></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Years of Experience</h3></label> <input type="text" ng-model="job.yrsOfExp"></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Salary </h3></label><input type="text" ng-model="job.salary"></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Skills Required </h3></label><input type="text" ng-model="job.skillsRequired"></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Location </h3></label><input type="text" ng-model="job.location"></div>
+<div class="container"  align="center">
+<label><h3 style="color:yellow">Enter Company Name </h3></label><input type="text" ng-model="job.companyName"></div>
+<input type="submit" class="signupbtn "value="savejob" ng-click="saveJob()">
+</div>
+</form>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/common/portfolio.css" rel="stylesheet">
+  </head>
+  <style>
+body {
+	background-image: url("images/FT LOGOmodified-2 (1).jpg");
+	background-size: cover;
+}
+</style>
+<body>
+<div class="container">
+<table class="table table-striped">
+<tr ng-repeat="pr in listOfPendingRequests">
+<td>{{pr.fromId}}</td><td><a href="" ng-click="updatePendingRequest(pr.fromId,'A')" class="btn btn-success">Accept</a></td>
+<td><a href="" ng-click="updatePendingRequest(pr.fromId,'D')" class="btn btn-danger">Reject</a></td>
+
+
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>

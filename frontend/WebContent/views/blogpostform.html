@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+     
+    <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+    
+    <link href="themes/explorer/theme.css" media="all" rel="stylesheet" type="text/css"/>
+   
+    
+    <script src="js/plugins/sortable.js" type="text/javascript"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="themes/explorer/theme.js" type="text/javascript"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+	rel="stylesheet" />
+   
+<title>Insert title here</title>
+
+
+</head>
+<style>
+ .ab{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    
+    
+    }
+    
+   textarea{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+    
+    
+/* .cancelbtn {
+color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+   background-color: #f44336;
+    width:20%; */
+     
+} 
+div.gallery img {
+    width: 70%;
+    height: 400px;
+  
+}
+.signupbtn {
+color: white;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border: none;
+    cursor: pointer;
+background-color: #4CAF50;
+    float: center;
+    width: 20%;
+}
+
+body{
+	background-image: url("images/blog.jpg");
+    background-size: cover;
+}
+</style>
+
+<body>
+
+<form> <!-- action="perform_login" method="post"> -->
+
+
+<div class="col-md-6">
+<div class="container" align="center">
+           
+  <br>
+  <br>
+   <br>
+   <br>
+   <br>
+ 
+				<h3><label for="name">Enter Blog Title</label></h3>
+				<input class="ab" ng-model="blogPost.title">&nbsp;&nbsp;&nbsp;
+			<br>
+				<h3><label for="password">Description</label></h3>
+				<textarea ng-model="blogPost.description"></textarea><br>
+				
+			
+				<input type="submit" class="signupbtn"  value="Post Blog" ng-click="saveBlogPost()">
+				
+				
+		</div>
+		
+		</div>
+
+
+	</form>
+</body>
+</html>
+
+
+<!-- {{message}}
+
+
+<form>
+<table>
+
+<tr>
+<td>Enter Blog Title</td>
+<td><input ng-model="blogPost.title"></td>
+</tr>
+
+<tr>
+<td>Enter Blog Description</td>
+<td><textarea ng-model="blogPost.description"></textarea></td>
+</tr>
+
+<td>
+<button class="btn btn-default" ng-click="saveBlogPost()">Post Blog</button>
+</td>
+
+</table>
+</form> -->

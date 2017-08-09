@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+     
+    <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
+    
+    <link href="themes/explorer/theme.css" media="all" rel="stylesheet" type="text/css"/>
+   
+    
+    <script src="js/plugins/sortable.js" type="text/javascript"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="themes/explorer/theme.js" type="text/javascript"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+	rel="stylesheet" />
+   
+
+<title>Insert title here</title>
+
+</head><style>
+body{
+	background-image: url(images\reflections-1555279.jpg);
+
+}
+
+</style>
+<body>
+
+<div>
+Search <input ng-model="jobTitle">
+<table class="table">
+<thead>
+<tr>
+<th>Job Title</th><th>Posted On</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="j in jobs | filter:jobTitle">
+<td><a href="" ng-click="getJobDetails(j.id)">{{j.jobTitle}}</a></td><td>{{j.postedOn | date:'yyyy/MM/dd HH:mm'}}</td>
+</tr>
+
+</tbody>
+</table>
+<div ng-show="showdetails">
+
+<b>Job Details</b><br>
+<b>Job Title :</b> {{job.jobTitle}}<br>
+<b>Job Description :</b> {{job.jobDescription}}<br>
+<b>Skills Required :</b> {{job.skillRequired}}<br>
+<b>Years Of Experience :</b> {{job.yrsOfExp}}<br>
+<b>Location :</b> {{job.location}}<br>
+<b>Salary :</b> {{job.salary}}<br>
+<b>Company Name :</b>{{job.companyName}}<br>
+</div>
+</div>
+</body>
+</html>
